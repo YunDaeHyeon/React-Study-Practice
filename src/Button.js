@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import styles from "./Button.module.css";
+// CRA는 CSS의 모듈화가 가능하다.
 
 function Button({text}){
     return <button className={styles.button}>{text}</button>;
