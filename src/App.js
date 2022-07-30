@@ -33,8 +33,25 @@ function App(){
           placeholder="Write your to do..."/>
         <button>Add To Do</button>
       </form>
+      <hr/>
+      <ul>
+        {
+          // map은 array에 있는 요소들을 모두 지정한 item으로 바꾼다.
+          // 함수도 가능!
+          // map함수의 첫 번째 요소는 배열의 첫 번째 아이템이다.
+          // ex) ['one', 'two'].map((item) => item.toUpperCase())
+          // => ['ONE', 'TWO]
+          // 이는 컴포넌트를 반환할 수 있다.
+          // toDos.map((item) => <li>{item}</li>)
+          // 해당 코드에는 문제가 존재하는데,
+          // 같은 컴포넌트의 list를 render할 때 key라는 prop을 요구한다.
+          // 이는 다음과 같이 바꿀 수 있다.
+          toDos.map((item, index) => <li key={index}>{item}</li>)
+          // map함수의 두 번째 요소는 배열의 각 아이템 위치를 말한다.
+          // 이를 key으로 넣어 고유(유니크) prop을 설정한다.
+        }
+      </ul>
     </div>
-
   )
 }
 
