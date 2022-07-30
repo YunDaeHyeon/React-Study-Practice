@@ -6,3 +6,4 @@
 # branch 정리
 - master => Main branch  
 - effects => useEffect Study branch  
+- practice => React practice and Code challenge
