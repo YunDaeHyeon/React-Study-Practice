@@ -36,3 +36,12 @@ export default App;
 // 실시간 Coin 가격 정보를 가져오기 위해
 // coinpaprika.com의 API 사용
 // api.coinpaprika.com/v1/tickers
+
+/*
+  React 코드 챌린지
+  1. input을 만들어 내 돈(USD)으로 얼마만큼의 비트코인을 구매할 수 있는지 작성
+  2. 1번 완성될 시 비트코인이 아닌, 다양한 코인들을 select를 통해 선택하고,
+     선택한 코인을 내 돈으로 얼마만큼 구매할 수 있는지 작성
+  3. 2번 완성될 시 USD가 아닌 한국(KRW)돈으로 바꿀 수 있게 지원(USD <-> KRW)
+     
+*/
