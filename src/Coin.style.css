@@ -1,0 +1,17 @@
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.usd, .krw, .coin, .inver{
+    border-radius: 4px;
+    margin: 5px 5px 5px 5px;
+    flex : 1;
+    background-color: none;
+}
+
+.coinSelect{
+    width:450px;
+}
