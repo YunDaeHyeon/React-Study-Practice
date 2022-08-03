@@ -1,10 +1,14 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 function Movie({coverImg, title, summary, genres}){
     return (
       <div>
         <img src={coverImg} alt={title}/> {/* 모든 img는 alt를 가진다. */}
-        <h2>{title}</h2>
+        <h2>
+          {/*새로고침 없이 페이지 이동을 위해 react-router-dom의 Link 사용*/}
+          <Link to="/movie">{title}</Link>
+          </h2>
         <p>{summary}</p>
         <ul>
           { // movies의 map 매개변수 movie에 컴포넌트를 할당하고,
